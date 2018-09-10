@@ -1,0 +1,8 @@
+*{
+    margin: '0';
+    padding: '20';
+    list-style: 'none';
+}
+li.active a{
+    color: 'red';
+}

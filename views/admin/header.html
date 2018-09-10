@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>控制中心</title>
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/ionicons.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/spark.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/montserrat.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/summernote.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/morris.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/md-snackbars.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/zabuto_calendar.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/jinritoutiao/web/assets/admin/css/change.css">
+    <script src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/popper.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/bootstrap.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.flot.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.flot.resize.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.flot.crosshair.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.flot.pie.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.bxslider.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/moment.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.bootstrap.wizard.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/summernote.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/fullcalendar.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/morris.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/raphael.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.flot.tooltip.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery.mark.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/md-snackbars.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/zabuto_calendar.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-world-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-africa-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-asia-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-cn-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-europe-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-in-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-north_america-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-oceania-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-south_america-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-uk_countries-mill.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/jquery-jvectormap-us-aea.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/gmaps.min.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/spark.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/bootstrap/dashboard.js"></script>
+    <script src="/jinritoutiao/web/assets/admin/css/news.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-spark navbar-toggleable navbar-expand-md">
+        <div class="container-fluid">
+            <button type="button" class="sidebar-open d-lg-none">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                <i class="ion ion-ios-pulse-strong" aria-hidden="true"></i>
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">个人中心</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="ion ion-person"></i> 查看个人信息</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="ion ion-chatbubbles"></i> 消息</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="ion ion-email"></i> 邮箱管理</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="ion ion-gear-b"></i> 设置</a></li>
+                        <li role="separator" class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="ion ion-log-out"></i> 退出账号</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">消息</a>
+                    <div class="dropdown-menu dropdown-md">
+
+                        <div class="media-items">
+                            <div class="media">
+                                <div class="media-left mr-1">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="/jinritoutiao/web/assets/admin/img/avatar-500x500.png"
+                                             width="38" height="38">
+                                    </a>
+                                </div>
+                                <div class="media-body text-muted">
+                                    <p class="media-heading">Linda Miller</p>
+                                    <span class="text-sm">Aenean posuere, tortor sed..</span>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="media-left mr-1">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="/jinritoutiao/web/assets/admin/img/avatar-500x500-2.png"
+                                             width="38" height="38">
+                                    </a>
+                                </div>
+                                <div class="media-body text-muted">
+                                    <p class="media-heading">Kathie Burton</p>
+                                    <span class="text-sm">Nam pretium turpis et arcu..</span>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="media-left mr-1">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="/jinritoutiao/web/assets/admin/img/avatar-500x500.png"
+                                             width="38" height="38">
+                                    </a>
+                                </div>
+                                <div class="media-body text-muted">
+                                    <p class="media-heading">Linda Miller</p>
+                                    <span class="text-sm">Aenean posuere, tortor sed..</span>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="media-left mr-1">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="/jinritoutiao/web/assets/admin/img/avatar-500x500-2.png"
+                                             width="38" height="38">
+                                    </a>
+                                </div>
+                                <div class="media-body text-muted">
+                                    <p class="media-heading">Kathie Burton</p>
+                                    <span class="text-sm">Nam pretium turpis et arcu..</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="dropdown-menu-footer" href="#">
+                            View all
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">任务</a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-md last-dropdown">
+
+                        <div class="dropdown-task text-muted">
+                            <div class="pull-right text-sm">50%</div>
+                            Google Chrome Extension
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-task text-muted">
+                            <div class="pull-right text-sm">90%</div>
+                            Bootstrap Admin Theme
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                     aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-task text-muted">
+                            <div class="pull-right text-sm">33%</div>
+                            YouTube Client
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 33%"
+                                     aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-task text-muted">
+                            <div class="pull-right text-sm">40%</div>
+                            Form Validation
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <a class="dropdown-menu-footer" href="#">
+                            View all
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="/jinritoutiao/web/assets/admin/img/avatar-500x500.png" alt="Avatar" width="48" height="48"
+                             class="avatar img-circle">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <header class="page-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 page-title-wrapper">
+                        <h1 class="page-title">新闻中心</h1>
+                        <h2 class="page-subtitle">管理</h2>
+                    </div>
+                    <div class="col-sm-4 d-none d-md-inline-block page-search-wrapper">
+                        <input type="text" class="form-control form-control-lg keyword-search"
+                               placeholder="查找新闻 &amp; 设置...">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page-body">
+            <div class="container-fluid">
+                <div class="page-sidebar toggled sidebar">
+                    <nav class="sidebar-collapse d-none d-lg-block">
+                        <i class="ion ion-ios-arrow-forward show-on-collapsed"></i>
+                    </nav>
+                    <ul class="nav nav-pills nav-stacked" id="sidebar-stacked">
+                        <li class="d-lg-none">
+                            <a href="#" class="sidebar-close"><i class="ion ion-ios-arrow-left"></i></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/jinritoutiao/web/admin.php?c=admin&m=index"><i class="ion ion-ios-home"></i> <span
+                                    class="nav-text">新闻中心</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-container" data-toggle="collapse" data-parent="#sidebar-stacked" href="/jinritoutiao/web/admin.php?c=admin&m=news">
+                                <i class="ion ion-ios-flask"></i> <span class="nav-text">新闻分类 <span
+                                    class="badge badge-pill badge-nav badge-warning">6</span></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-container dropdown-toggle" data-toggle="collapse"
+                               data-parent="#sidebar-stacked" href="/jinritoutiao/web/admin.php?c=admin&m=news">
+                                <i class="ion ion-ios-pie"></i> <span class="nav-text">新闻管理</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-container" data-toggle="collapse" data-parent="#sidebar-stacked" href="#p3">
+                                <i class="ion ion-ios-copy"></i> <span class="nav-text">数量<span
+                                    class="badge badge-pill badge-nav badge-warning">4</span></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-container dropdown-toggle" data-toggle="collapse"
+                               data-parent="#sidebar-stacked" href="#p4">
+                                <i class="ion ion-ios-paper"></i> <span class="nav-text">新闻源</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-content">

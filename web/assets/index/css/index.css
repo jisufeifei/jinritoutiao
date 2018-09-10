@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    /* 取消高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.indexheader{
+    width: 100%;
+    height: 1.1rem;
+    background: #ed4040;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+}
+
+.indexheader .mail{
+    width: 1rem;
+    height: 100%;
+}
+
+.indexheader .mail .iconfont{
+    color: #fff;
+    display: block;
+    font-size: 0.5rem;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+.indexheader .title{
+    width: 4.48rem;
+    height: 100%;
+    display: flex;
+}
+
+.indexheader .title .img{
+    width: 2.5rem;
+    height: 0.5rem;
+    padding: 0 0.1rem;
+    margin-left: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.indexheader .title .img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+}
+
+.indexheader .title .iconfont{
+    color: #fff;
+    display: block;
+    font-size: 0.4rem;
+    line-height: 1.1rem;
+}
+
+.indexheader .search{
+    width: 1rem;
+    height: 100%;
+}
+
+.indexheader .search .iconfont{
+    color: #fff;
+    display: block;
+    font-size: 0.5rem;
+    line-height: 1.1rem;
+    text-align: center;
+}
+.header-lines{
+    width: 100%;
+    height: 0.7rem;
+    /*background: brown;*/
+    position: fixed;
+    top: 1.1rem;
+    bottom: 0.7rem;
+    right: 0;
+    z-index: 32;
+}
+
+.header-line{
+    width: 100%;
+    height: 100%;
+    background: #d1d4d4;
+    padding-left: 0.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-line .items{
+    width: 13.2rem;
+    height: 0.7rem;
+    /*background: coral;*/
+}
+
+.header-line .items .item{
+    width: 1.2rem;
+    height: 100%;
+    /*background: brown;*/
+    font-size: 0.4rem;
+    color: #666;
+    line-height: 0.7rem;
+    text-align: center;
+    float: left;
+}
+
+.header-line .items .item.active{
+    color: #ed4040;
+}
+
+.header-line .plus{
+    width: 0.8rem;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 24;
+    right: 0;
+    top: 0;
+}
+
+.header-line .plus .iconfont{
+    display: block;
+    font-size: 0.4rem;
+    font-weight: 900;
+    color: #ed4040;
+    text-align: center;
+    line-height: 0.7rem;
+}
+
+.theme-body{
+    width: 100%;
+    height: 20rem;
+    margin-top: 1.8rem;
+    /*background: cadetblue;*/
+}
+
+.theme-body .main-body{
+    width: 100%;
+    /*background: aqua;*/
+    padding: 0 0.2rem;
+}
+
+.main-body .news{
+    width: 7.1rem;
+    /*height: 1.4rem;*/
+    /*background: #04569A;*/
+    border-bottom: 0.02rem solid #999;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+
+.main-body .news .new{
+    width: 100%;
+    /*background: aquamarine;*/
+}
+
+.main-body .news .title{
+    width: 100%;
+    /*height: 0.7rem;*/
+    /*background: darkcyan;*/
+}
+
+.main-body .news .title p{
+    display: block;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    color: #333;
+}
+
+.main-body .news .desc{
+    width: 100%;
+    /*height: 0.3rem;*/
+    /*background: brown;*/
+    margin-top: 0.1rem;
+    display: flex;
+}
+
+.main-body .news .desc .top{
+    display: block;
+    /*width: 0.6rem;*/
+    padding: 0 0.1rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #ed4040;
+    border: 0.01rem solid #ed4040;
+    border-radius: 0.05rem;
+    margin-right: 0.15rem;
+}
+
+.main-body .news .desc .address{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news .desc .comment{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news .desc .time{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+
+.main-body .news-picture{
+    width: 7.1rem;
+    /*height: 2.0rem;*/
+    /*background: #04569A;*/
+    border-bottom: 0.02rem solid #999;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-body .news-picture .new{
+    width: 60%;
+    /*background: cornflowerblue;*/
+    float: left;
+}
+
+.main-body .news-picture .title{
+    width: 100%;
+    /*height: 0.7rem;*/
+    /*background: darkcyan;*/
+}
+
+.main-body .news-picture .title p{
+    display: block;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    color: #333;
+}
+
+.main-body .news-picture .desc{
+    width: 100%;
+    /*height: 0.3rem;*/
+    /*background: brown;*/
+    margin-top: 0.1rem;
+    display: flex;
+}
+
+.main-body .news-picture .desc .top{
+    display: block;
+    width: 0.6rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #ed4040;
+    border: 0.01rem solid #ed4040;
+    border-radius: 0.05rem;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-picture .desc .address{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-picture .desc .comment{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-picture .desc .time {
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+
+.main-body .news-picture .picture{
+    width: 38%;
+    height: 95%;
+    /*background: coral;*/
+    float: right;
+}
+
+.news-picture .picture img{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+
+.main-body .news-pictures{
+    width: 7.1rem;
+    /*height: 1.4rem;*/
+    /*background: #04569A;*/
+    border-bottom: 0.02rem solid #999;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+
+.main-body .news-pictures .title{
+    width: 100%;
+    /*height: 0.7rem;*/
+    /*background: darkcyan;*/
+}
+
+.main-body .news-pictures .title p{
+    display: block;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    color: #333;
+}
+
+.main-body .news-pictures .pictures{
+    width: 100%;
+    /*background: aquamarine;*/
+}
+
+.main-body .news-pictures .pictures ul{
+    display: flex;
+}
+
+.main-body .news-pictures .pictures ul .list-img{
+    width: 32.6%;
+    /*background: coral;*/
+}
+
+.main-body .news-pictures .pictures ul .list-img:first-child{
+    margin-right: 1.1%;
+}
+
+.main-body .news-pictures .pictures ul .list-img:last-child{
+    margin-left: 1.1%;
+}
+
+.main-body .news-pictures .pictures ul img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-body .news-pictures .desc{
+    width: 100%;
+    /*height: 0.3rem;*/
+    /*background: brown;*/
+    margin-top: 0.1rem;
+    display: flex;
+}
+
+.main-body .news-pictures .desc .top{
+    display: block;
+    width: 0.6rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #ed4040;
+    border: 0.01rem solid #ed4040;
+    border-radius: 0.05rem;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-pictures .desc .address{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-pictures .desc .comment{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .news-pictures .desc .time{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+
+
+
+
+
+
+.main-body .advertising{
+    width: 7.1rem;
+    /*background: #04569A;*/
+    border-bottom: 0.02rem solid #999;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+
+.main-body .advertising .title{
+    width: 100%;
+    /*height: 0.7rem;*/
+    /*background: darkcyan;*/
+}
+
+.main-body .advertising .title p{
+    display: block;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    color: #333;
+}
+
+.main-body .advertising .banner{
+    width: 100%;
+    background: cornflowerblue url("data:image/gif;base64,R0lGODlh7AA5AIAAAOHh4f///yH5BAEAAAEALAAAAADsADkAAAL/jI+py+0Po5y02ouz3hv4D4YhR2YiWAbnmJrry3bwTNdeRFNwWbeYPeMAh0SAJHd8kYpMZbIZ+0GnUUcP59RQt8/tzeWdTq6PnTYMxaK/l3V6HISYpe6iHKjCt+t2XdyaZcHHVKZnYOg3iNi1Uti4pzgESIYgmXjS8genqTBXQQmJtLBYSTqJmcLJ+DgauOkZKlpq4wh6KpIJ+8ra6aqme2mbR3tHXIzKA7yK28rrE6t6aMpgWcuc7BuMPLstaHwryx1+PN7rLJP9LF7l/Z1A1FCtrXxAD82uvo4iRCpvLjyMzbtp0s6dSZcv4DV+xOCBS2fQn74PuRBO3LeMYio+/wkLdsP28aDBfyOpWaTjpaPHkAxZonQ50F5MmCLfdARYEx+YkiRp1juJro9KhTxf6jR6tBlQohjz2bxZLujClj4vNjVZNCchqNGkJm2XdeZJmUjFOI2qVSPIqmJpkv006OxbuJFwPkw695eiZ1291g2rtGTeu3Ga+Fh67+/UeToHB3bHFHLOhIrRkouI+LHdp0OXVHbcdnFkgbskY3XYmernr3wzewacmutq0bJpy2UbbzZQ0IRJD+W903ZG3UassWastnNfdcB/Ehe+8njpo885Vb9O0Dluvbaxf/QOfrfry9TDJ49uHjz5836vWiWuGXtsu+jZp7Vfv3r86/Mt5+wvvlZ35p2mnnKmWVURbIll9x98vx2I4Ebj0SUUZRP251+EAUq3IH29hZZcc2VtJ2JPHFJoGFjdeLLcYRDuB+BrCk63FXIx/gcifi5mCGOC2w03Ao/vmcheiev9qB10KCq5JCtC4kikby3exySBJx7pG5VNeQhllDc2yNyLxunmoy9CKoPmhb1dCaNiY3LR5pdeWtmYkUnayd+bZsUpp4ajCahmjlViGQmQNdKJlyselshgk3/RmKKeOsLC45S5cWljXJBWuGaWugxmqZdsEuqGipxJ6qmZM/5paqCdohFbrMAgGWuttt6Ka2wFAAA7") no-repeat center/100% 100%;
+}
+
+.main-body .advertising .banner img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-body .advertising .desc{
+    width: 100%;
+    /*height: 0.3rem;*/
+    /*background: brown;*/
+    margin-top: 0.1rem;
+    display: flex;
+}
+
+.main-body .advertising .desc .top{
+    display: block;
+    width: 0.6rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #2a90d7;
+    border: 0.01rem solid #2a90d7;
+    border-radius: 0.05rem;
+    margin-right: 0.15rem;
+}
+
+.main-body .advertising .desc .address{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .advertising .desc .comment{
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+    margin-right: 0.15rem;
+}
+
+.main-body .advertising .desc .time {
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom{
+    width: 100%;
+    height: 1.5rem;
+    background: burlywood;
+    display: none;
+}
+
+.bottom span{
+    display: block;
+    font-size: 0.5rem;
+    color: #999;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.boxs{
+    width: 5.4rem;
+    height: 4.5rem;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0.1rem;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 0.4rem;
+}
+
+.box .banner{
+    width: 3.8rem;
+    height: 2.4rem;
+    background: url("http://s3a.pstatp.com/growth/mobile_list/image/popup_banner_6006ac97.png")center/3.8rem 2.4rem no-repeat;
+    margin: 0 auto;
+}
+
+.box .word{
+    width: 100%;
+    height: 0.4rem;
+    margin-top: 0.15rem;
+}
+
+.box .word span{
+    display: block;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: #999;text-align: center;
+}
+
+.box .button{
+    width: 4.4rem;
+    height: 0.8rem;
+    margin: 0.2rem auto 0;
+}
+
+.box .button button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 103, 98);
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 0.1rem;
+}
+
+.box .close{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box .close .iconfont{
+    display: block;
+    font-size: 0.5rem;
+    color: #999;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.backdrop{
+    width: 7.5rem;
+    height: 100%;
+    background: rgba(33,33,33,0.3);
+    position: fixed;;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

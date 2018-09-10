@@ -1,0 +1,48 @@
+<?php include 'header.html' ?>
+<div class="col-md-6">
+    <div class="card card-default widget animated" style="width: 1000px; animation-delay: 0.31s;">
+        <div class="card-heading">
+            <div class="card-controls">
+                <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
+                <a href="#" class="widget-close"><i class="fa fa-times"></i></a>
+            </div>
+            <h3 class="card-title">新闻管理</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>dsc</th>
+                    <th>image</th>
+                    <th>url</th>
+                    <th>create_time</th>
+                    <th>content</th>
+                    <th>action</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                <?php foreach( $course as $k => $v) { ?>
+                <tr data-id="<?php echo $v['id'] ?>">
+                    <th scope="row"><?php echo $v['id'] ?></th>
+                    <td><input data-type="title" class="form-control" type="text" value="<?php echo $v['title'] ?>"></td>
+                    <td><input data-type="dsc" class="form-control" type="text" value="<?php echo $v['dsc'] ?>"></td>
+                    <td><input data-type="dsc" class="form-control" type="text" value="<?php echo $v['image'] ?>"></td>
+                    <td><input data-type="dsc" class="form-control" type="text" value="<?php echo $v['url'] ?>"></td>
+                    <td><input data-type="dsc" class="form-control" type="text" value="<?php echo $v['create_time'] ?>"></td>
+                    <td><input data-type="content" class="form-control" type="text" value="<?php echo $v['content'] ?>"></td>
+                    <td><button type="button" class="btn remove btn-default">删除</button></td>
+                </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+            <button type="button" id="add" class="btn btn-round btn-success">新增</button>
+            <div class="progress" id="progress" style="display: none">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<? include 'footer.html' ?>

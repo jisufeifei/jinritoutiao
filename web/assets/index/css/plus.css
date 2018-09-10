@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    /* 取消高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header{
+    width: 100%;
+    height: 1.1rem;
+    background: #ed4040;
+    padding: 0 0.2rem;
+    display: flex;
+}
+
+.header .return{
+    width: 0.7rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.header .return .iconfont{
+    display: block;
+    font-size: 0.4rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1rem;
+}
+
+.header .theme{
+    width: 4.48rem;
+    height: 100%;
+    margin-left: 0.8rem;
+}
+
+.header .theme span{
+    display: block;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.headerline{
+    width: 100%;
+    height: 0.5rem;
+    background: #f5f5f5;
+    padding: 0 0.2rem;
+}
+
+.headerline span{
+    display: block;
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.5rem;
+}
+
+.delete{
+    width: 100%;
+    height: 2.64rem;
+    background: #fff
+}
+
+.delete .channelFigure.recommend{
+    background: #ccc;
+}
+
+.delete ul li{
+    float: left;
+    width: 1.4rem;
+    height: 0.5rem;
+    border: 0.02rem solid #999999;
+    margin: 0.2rem 0 0 0.35rem;
+    box-shadow: 0 0 0.05rem #999;
+}
+
+.delete ul li span{
+    display: block;
+    font-size: 0.28rem;
+    color: #666;
+    text-align: center;
+    line-height: 0.45rem;
+}
+
+.addline{
+    width: 100%;
+    height: 0.5rem;
+    background: #f5f5f5;
+    padding: 0 0.2rem;
+}
+
+.addline span{
+    display: block;
+    font-size: 0.24rem;
+    color: #666;
+    line-height: 0.5rem;
+}
+
+.add{
+    width: 100%;
+    height: 1.64rem;
+    background: #ffffff;
+}
+
+.add ul li{
+    float: left;
+    width: 1.4rem;
+    height: 0.5rem;
+    border: 0.02rem solid #999999;
+    margin: 0.2rem 0 0 0.35rem;
+    box-shadow: 0 0 0.02rem #999;
+}
+
+.add ul li span{
+    display: block;
+    font-size: 0.28rem;
+    color: #666;
+    text-align: center;
+    line-height: 0.45rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
